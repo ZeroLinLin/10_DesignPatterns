@@ -1,0 +1,9 @@
+GoF的设计模式那本书里有这么一句话:
+"Template methods use inheritance（继承） to vary part of an algorithm.  
+
+Strategies use delegation（委托，实现） to vary the entire algorithm."
+,说的正是这个问题.
+
+回到具体问题上,如果我们要封装的算法适合于提供给用户任意使用,是"一整个算法",那么用Strategy模式较好;
+如果要封装的变化是一个算法中的部分(换言之,大算法的步骤是固定的),而且我们不希望用户直接使用这些方法,那么应该使用Template Method模式.
+就此,问题的"痛处"算是抓住了.
